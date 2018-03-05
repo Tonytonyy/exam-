@@ -14,7 +14,7 @@ String basePath = request.getScheme() + "://"
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Exam++ 登录系统</title>
+		<title>JMU在线考试系统</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -34,12 +34,14 @@ String basePath = request.getScheme() + "://"
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-5">
-						<div class="logo">
+					<div class="col-xs-7">
+						<!-- <div class="logo">
 							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
-						</div>
+						</div> -->
+						<h1 class="title text-primary "><strong><em>JMU船电英语在线考试系统</em></strong></h1>
+
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<div class="col-xs-5" id="login-info">
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
 								<div id="login-info-user">
@@ -91,7 +93,7 @@ String basePath = request.getScheme() + "://"
 
 					<div class="col-md-12">
 						<div class="lrform">
-							<h5>登陆Exam++</h5>
+							<h5>登陆</h5>
 							<div class="form">
 								<!-- Login form (not working)-->
 								<form class="form-horizontal" action="j_spring_security_check" method="post">
@@ -134,7 +136,7 @@ String basePath = request.getScheme() + "://"
 
 		</div>
 		<footer>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
@@ -145,7 +147,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 		</footer>
 

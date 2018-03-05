@@ -15,7 +15,7 @@ String basePath = request.getScheme() + "://"
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Exam++</title>
+		<title>JMU在线考试系统</title>
 		<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -84,12 +84,14 @@ String basePath = request.getScheme() + "://"
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-5">
+					<div class="col-xs-7">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
+							<!-- <h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1> -->
+							<h1 class="title text-primary "><strong><em>JMU船电英语在线考试系统</em></strong></h1>
+
 						</div>
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<div class="col-xs-5" id="login-info">
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
 								<div id="login-info-user">
@@ -377,7 +379,7 @@ String basePath = request.getScheme() + "://"
 
 		</div>
 		<footer>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
@@ -388,7 +390,7 @@ String basePath = request.getScheme() + "://"
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 		</footer>
 

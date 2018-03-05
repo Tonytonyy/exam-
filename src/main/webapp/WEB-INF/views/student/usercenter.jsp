@@ -84,12 +84,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-5">
+					<div class="col-xs-7">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
+							<!-- <h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1> -->
+							<h1 class="title text-primary "><strong><em>JMU船电英语在线考试系统</em></strong></h1>
+
 						</div>
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<div class="col-xs-5" id="login-info">
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
 								<div id="login-info-user">
@@ -207,7 +209,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 
 		<footer>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
@@ -218,7 +220,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 		</footer>
 

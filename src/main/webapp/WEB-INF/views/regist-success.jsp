@@ -14,7 +14,7 @@ String basePath = request.getScheme() + "://"
 		<base href="<%=basePath%>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Exam++ 注册成功</title>
+		<title>JMU在线考试系统</title>
 		
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="keywords" content="">
@@ -28,12 +28,14 @@ String basePath = request.getScheme() + "://"
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-5">
+					<div class="col-xs-7">
 						<div class="logo">
-							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
+							<!-- <h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1> -->
+							<h1 class="title text-primary "><strong><em>JMU船电英语在线考试系统</em></strong></h1>
+
 						</div>
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<div class="col-xs-5" id="login-info">
 
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
@@ -85,7 +87,7 @@ String basePath = request.getScheme() + "://"
 			<!-- Slider (Flex Slider) -->
 
 			<div class="container" style="height:500px;margin-top: 50px;">
-				<h2>欢迎注册Exam++</h2>
+				<h2>欢迎注册</h2>
 				<p class="big grey">
 					您的账号为<span>${username}</span>
 				</p>
@@ -102,7 +104,7 @@ String basePath = request.getScheme() + "://"
 		</div>
 
 		<footer>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
@@ -114,7 +116,7 @@ String basePath = request.getScheme() + "://"
 				</div>
 
 			</div>
-
+ -->
 		</footer>
 
 		<!-- Slider Ends -->

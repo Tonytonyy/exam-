@@ -15,7 +15,7 @@ String basePath = request.getScheme() + "://"
 		Remove this if you use the .htaccess -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>Exam++</title>
+		<title>JMU在线考试系统</title>
 		<meta name="viewport"
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -85,12 +85,14 @@ String basePath = request.getScheme() + "://"
 		<header>
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-5">
-						<div class="logo">
+					<div class="col-xs-7">
+						<!-- <div class="logo">
 							<h1><a href="#"><img alt="" src="resources/images/logo.png"></a></h1>
-						</div>
+						</div> -->
+						<h1 class="title text-primary "><strong><em>JMU船电英语在线考试系统</em></strong></h1>
+
 					</div>
-					<div class="col-xs-7" id="login-info">
+					<div class="col-xs-5" id="login-info">
 						<c:choose>
 							<c:when test="${not empty sessionScope.SPRING_SECURITY_CONTEXT.authentication.principal.username}">
 								<div id="login-info-user">
@@ -146,8 +148,10 @@ String basePath = request.getScheme() + "://"
 							<div class="flex-caption">
 								<!-- Left column -->
 								<div class="col-l">
-									<p style="text-indent:2em;">Exam++是国内首款一款基于JAVA与MYSQL开发的网络考试系统。它可以稳定、顺畅的运行在Windows与Linux平台上。您可以通过它快捷方便的创建试题和题库，发布试卷，组织考试，系统自动批改。高度的可配置性和灵活性使得它可以被应用于很多领域。</p>
-									<p style="text-indent:2em;">软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持</p>
+				<!-- 					<p style="text-indent:2em;">Exam++是国内首款一款基于JAVA与MYSQL开发的网络考试系统。它可以稳定、顺畅的运行在Windows与Linux平台上。您可以通过它快捷方便的创建试题和题库，发布试卷，组织考试，系统自动批改。高度的可配置性和灵活性使得它可以被应用于很多领域。</p> -->
+								<!-- 	<p style="text-indent:2em;">软件采用GPL协议，完全开放且免费，并且有固定的开发团队提供技术支持</p> -->
+									<p style="text-indent:2em;">在这里你可以练习船电英语，快来试一试吧！</p>
+
 								</div>
 								<!-- Right column -->
 								<div class="col-r">
@@ -155,11 +159,11 @@ String basePath = request.getScheme() + "://"
 									<!-- Use the class "flex-back" to add background inside flex slider -->
 
 									<!-- <img alt="" src="resources/images/ad.png"> -->
-									<p>如果您对软件有任何反馈和建议，加入我们的QQ群152258375一起讨论吧</p>
+									<!-- <p>如果您对软件有任何反馈和建议，加入我们的QQ群152258375一起讨论吧</p> -->
 
 									<!-- Button -->
-										<a class="btn btn-default btn-cta" href="user-register"><i class="fa fa-arrow-circle-down"></i> 马上加入我们吧</a>
-
+<!-- 										<a class="btn btn-default btn-cta" href="user-register"><i class="fa fa-arrow-circle-down"></i> 马上加入我们吧</a>
+ -->
 								</div>
 							</div>
 						</div>
@@ -289,7 +293,7 @@ String basePath = request.getScheme() + "://"
 									<i class="fa fa-file-text"></i>
 								</div>
 								<div class="select-test-content">
-									<h3 class="title">模拟考试</h3>
+									<h3 class="title">模拟考试2333</h3>
 									<p>
 										根据最新大纲的考查要求为你自动生成的模拟卷
 									</p>
@@ -331,7 +335,7 @@ String basePath = request.getScheme() + "://"
 									<p>
 										随机组成试卷参加考试
 									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".history-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
+									<a class="btn btn-primary" data-toggle="modal" data-target=".history-exampaper-modal" ><i class="fa fa-arrow-right"></i>开始考试</a>
 									<div class="modal fade history-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 									  <div class="modal-dialog">
 									    <div class="modal-content">
@@ -370,7 +374,7 @@ String basePath = request.getScheme() + "://"
 									<p>
 										专家组卷，为你提供更权威的考题动向
 									</p>
-									<a class="btn btn-primary" data-toggle="modal" data-target=".expert-exampaper-modal" disabled="disabled"><i class="fa fa-arrow-right"></i>即将开放</a>
+									<a class="btn btn-primary" data-toggle="modal" data-target=".expert-exampaper-modal" ><i class="fa fa-arrow-right"></i>参加考试</a>
 									<div class="modal fade expert-exampaper-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 									  <div class="modal-dialog">
 									    <div class="modal-content">
@@ -412,9 +416,9 @@ String basePath = request.getScheme() + "://"
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
-							<p>
+					<!-- 		<p>
 								Exam++ Copyright © <a href="http://www.examxx.net/" target="_blank">Exam++</a> - <a href="." target="_blank">主页</a> | <a href="http://www.examxx.net/" target="_blank">关于我们</a> | <a href="http://www.examxx.net/" target="_blank">FAQ</a> | <a href="http://www.examxx.net/" target="_blank">联系我们</a>
-							</p>
+							</p> -->
 						</div>
 					</div>
 				</div>
@@ -481,6 +485,6 @@ String basePath = request.getScheme() + "://"
 			});
 		}
 		</script>
-		<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252987997'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1252987997' type='text/javascript'%3E%3C/script%3E"));</script>
+		<!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1252987997'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1252987997' type='text/javascript'%3E%3C/script%3E"));</script> -->
 	</body>
 </html>

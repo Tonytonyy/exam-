@@ -114,6 +114,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							<li>
 								<a href="admin/add-user"> <i class="fa fa-list-ul"></i> 添加会员 </a>
 							</li>
+							<li>
+								<a href="admin/add-user"> <i class="fa fa-list-ul"></i> 开放注册 </a>
+							</li>
 						</ul>
 					</div>
 					<div class="col-xs-9">
@@ -199,7 +202,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		</div>
 
 		<footer>
-			<div class="container">
+			<!-- <div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="copy">
@@ -210,7 +213,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 		</footer>
 
